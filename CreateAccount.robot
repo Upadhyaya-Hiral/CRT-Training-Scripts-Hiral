@@ -1,11 +1,12 @@
 *** Settings ***
-Resource                        ../Resources/common.robot
+Resource                        common.robot
 Suite Setup                     Setup Browser
 Suite Teardown                  End suite
 
 
 *** Test Cases ***
 Create Account Growmore
+    [Documentation]            Changes done in CreateAccount file in Copado
     [Tags]                      Account                     New Account
     Appstate                    Home
     LaunchApp                   Sales
